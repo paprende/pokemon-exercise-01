@@ -1,4 +1,4 @@
-### Coding Exercise: Build a Pokémon Encyclopedia with Angular 20
+### Coding Exercise: Build a Pokémon Encyclopedia
 
 #### Objective:
 
@@ -8,7 +8,7 @@ Build a Pokémon encyclopedia web application that fetches and displays detailed
 
 1. **UI Design**:
 
-   - The layout should resemble the Pokémon Pokedex entry (e.g., [Bulbasaur's Pokedex](https://www.pokemon.com/us/pokedex/bulbasaur)).
+   - The layout should resemble the Pokémon Pokedex entry (refer to UX.png)
    - The application should include:
      - **Pokémon Image**: Display the Pokémon's image.
      - **Name**: Display the Pokémon's name.
@@ -19,15 +19,15 @@ Build a Pokémon encyclopedia web application that fetches and displays detailed
      - **Stats**: Show the stats (e.g., HP, Attack, Defense, Speed).
    - Add styling to ensure the web app looks clean and polished.
 
-2. **Angular Components**:
+2. **Components**:
 
    - Create a main component for displaying Pokémon details.
-   - Use Angular’s **service** to fetch data from the [PokeAPI](https://pokeapi.co/).
+   - Create a service to fetch data from the [PokeAPI](https://pokeapi.co/).
    - Organize the UI into smaller reusable components like Pokémon image, stats, and abilities.
 
 3. **Fetch Data**:
 
-   - Use Angular's `HttpClient` to make a GET request to the PokeAPI.
+   - Use a http client to make a GET request to the PokeAPI.
    - Fetch data for a specific Pokémon based on its name or ID (e.g., "bulbasaur" or "1").
 
 4. **Search Feature**:
