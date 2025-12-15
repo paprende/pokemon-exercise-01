@@ -1,8 +1,16 @@
-import PokeView from './components/PokeView';
-import "./App.css";
+import { useState } from 'react'
+import './App.css'
 
 function App() {
-  return (<PokeView></PokeView>)
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <p>
+        THIS IS YOUR APP 😊
+      </p>
+    </>
+  )
 }
 
-export default App;
+export default App
