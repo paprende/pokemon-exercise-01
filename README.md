@@ -25,6 +25,29 @@ Build a Pokémon encyclopedia web application that fetches and displays detailed
    - Create a service to fetch data from the [PokeAPI](https://pokeapi.co/).
    - Organize the UI into smaller reusable components like Pokémon image, stats, and abilities.
 
+   For example if you did GET https://pokeapi.co/api/v2/pokemon/ditto
+
+   you will get something like
+
+   {
+      "name": "ditto",
+      "order": 214,
+      "abilities": [
+      {
+        "ability": {
+          "name": "limber",
+          "url": "https://pokeapi.co/api/v2/ability/7/"
+        },
+        "is_hidden": false,
+        "slot": 1
+      },
+      "base_experience": 101,
+      "sprites": {
+         "front": "...",
+         "back": "..."
+      }
+   }
+
 3. **Fetch Data**:
 
    - Use a http client to make a GET request to the PokeAPI.
@@ -38,17 +61,17 @@ Build a Pokémon encyclopedia web application that fetches and displays detailed
 
 5. **Error Handling**:
 
-   - Implement error handling for invalid or missing Pokémon data using Angular's error handling mechanisms (e.g., `.catchError()`).
+   - Implement error handling for invalid or missing Pokémon data using react's error handling mechanisms (e.g., `.catchError()`).
    - Display an appropriate error message when the user inputs a non-existent Pokémon name.
 
 6. **Responsive Design**:
 
-   - Ensure the application is mobile-responsive using CSS or a framework like **Angular Material** for better UI components and responsiveness.
+   - Ensure the application is mobile-responsive using CSS or a framework like **react Material** for better UI components and responsiveness.
 
 #### Technologies:
 
-- **Frontend**: Angular 20 (using Angular CLI for setup), HTML, CSS (or Angular Material).
+- **Frontend**: react(using react CLI for setup), HTML, CSS (or react Material).
 - **API**: [PokeAPI](https://pokeapi.co/).
-- **HTTP Requests**: Angular's `HttpClient`.
+- **HTTP Requests**: react's `HttpClient`.
 
 Good luck and happy coding!
